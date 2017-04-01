@@ -16,3 +16,11 @@ User stories:
 Wireframe:
 
 themes:  80s style, 16-bit, NES
+
+
+DELIVERABLES:
+Gold:  Full sound, panels formatted to curve like the panels on the actual game, a way to have either one or two-player modes, track score across time, have a high-score panel to display (like in an arcade game)
+
+Silver:  up to two players, non-curved panels, but very high quality colors (with shading and reflections of light sources).  track score across several games.
+
+Bronze:  title box, score box, alert noises, 4 basic colored panels, one player
