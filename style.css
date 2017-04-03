@@ -16,7 +16,7 @@ body {
 }
 
 .blue {
-  background-color: #0069C2;
+  background-color: #7FB4E0;
   width : 350px;
   height: 100px;
   margin-top: 50px;
@@ -24,7 +24,7 @@ body {
 }
 
 .yellow {
-  background: #F8C31B;
+  background: #ECEE25;
   width : 350px;
   height: 100px;
   margin-top: 50px;
@@ -33,14 +33,14 @@ body {
 }
 
 .red {
-  background: #FF4337;
+  background: #ec7878;
   width : 350px;
   height: 100px;
 
 }
 
 .green {
-  background: #05AB42;
+  background: #82D5A0;
   width : 350px;
   height: 100px;
 
@@ -67,4 +67,20 @@ body {
 p {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.dkblue {
+  background-color: #0069C2;
+}
+
+.dkyellow {
+  background-color: #F8C31B;
+}
+
+.dkred {
+  background-color: #FF4337;
+}
+
+.dkgreen {
+  background-color: #05AB42;
 }
