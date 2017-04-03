@@ -1,0 +1,70 @@
+body {
+  background: #C7BBC9;
+  margin: 100px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.panels {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blue {
+  background-color: #0069C2;
+  width : 350px;
+  height: 100px;
+  margin-top: 50px;
+
+}
+
+.yellow {
+  background: #F8C31B;
+  width : 350px;
+  height: 100px;
+  margin-top: 50px;
+
+
+}
+
+.red {
+  background: #FF4337;
+  width : 350px;
+  height: 100px;
+
+}
+
+.green {
+  background: #05AB42;
+  width : 350px;
+  height: 100px;
+
+}
+
+.midbutton {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.button {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  background: #F8F8FF;
+  margin-top: 50px;
+}
+
+p {
+  display: flex;
+  flex-direction: row-reverse;
+}
