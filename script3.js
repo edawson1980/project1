@@ -11,7 +11,7 @@ var green = $(".green");
 
 // lights[1] = "yellow";
 
-var lights = ["blue", "yellow", "red", "green"];
+var lights = [blue, yellow, red, green];
 var pattern = [];
 var compMoves = 0;
 var userMoves = 0;
@@ -26,7 +26,7 @@ for (i=0; i<lights.length; i++){
 }
 var randomColor = function(){
   console.log("colors work");
-  return Color[Math.floor(Math.random()*Color.length)];
+  return lights[Math.floor(Math.random()*lights.length)];
 };
 
 var isClicked = setInterval(active, 750);
