@@ -9,9 +9,10 @@ body {
   justify-content: center;
 }
 
-.panels {
+.lights {
   display: flex;
   justify-content: space-between;
+
 
 }
 
@@ -20,6 +21,7 @@ body {
   width : 350px;
   height: 100px;
   margin-top: 50px;
+
 
 }
 
@@ -68,19 +70,11 @@ p {
   display: flex;
   flex-direction: row-reverse;
 }
-
-.dkblue {
-  background-color: #0069C2;
+.active {
+  opacity: 0.5;
 }
-
-.dkyellow {
-  background-color: #F8C31B;
-}
-
-.dkred {
-  background-color: #FF4337;
-}
-
-.dkgreen {
-  background-color: #05AB42;
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }

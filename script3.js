@@ -9,17 +9,19 @@ var yellow = new Color (".yellow");
 var red = new Color (".red");
 var green = new Color (".green");
 
-var panels = ["blue", "yellow", "red", "green"];
+lights[1] = "yellow";
+
+var lights = ["blue", "yellow", "red", "green"];
 var pattern = [];
 var compMoves = 0;
 var userMoves = 0;
 var score = 0;
 
 var active = function (){
-  $(panels[i]).toggleClass('active');
+  $(lights[i]).toggleClass('active');
 };
 
-for (i=0; i<panels.length; i++){
+for (i=0; i<lights.length; i++){
   pattern.push(i);
 }
 
@@ -31,6 +33,15 @@ $(".midbutton").click(function(){
   clearInterval(isClicked);
 });
 
-$(".panels").click(function(){
-  active();
+$(".blue").click(function(){
+  $(".blue").toggleClass('active');
+});
+$(".yellow").click(function(){
+  $(".yellow").toggleClass('active');
+});
+$(".red").click(function(){
+  $(".red").toggleClass('active');
+});
+$(".green").click(function(){
+  $(".green").toggleClass('active');
 });
