@@ -9,7 +9,7 @@ var yellow = $(".yellow");
 var red = $(".red");
 var green = $(".green");
 
-// lights[1] = "yellow";
+
 
 var lights = [blue, yellow, red, green];
 var pattern = [];
@@ -18,22 +18,47 @@ var userMoves = 0;
 var score = 0;
 
 var active = function (){
-  $(lights[i]).toggleClass('active');
+  (index.pattern).toggleClass('active');
 };
 
-for (i=0; i<lights.length; i++){
-  pattern.push(i);
-}
+// lights.forEach(function(currentLight){
+//   console.log("this is called");
+//   currentLight.toggleClass('active');
+// });
+
+
 var randomColor = function(){
   console.log("colors work");
   return lights[Math.floor(Math.random()*lights.length)];
 };
+ compMoves = function(){
+   pattern.push(randomColor());
+ };
+
+
+   blue.addClass("active");
+   //timer//
+   blue.removeClass("active");
+
+   yellow.addClass("active");
+   //timer//
+   yellow.removeClass("active");
+
+   red.addClass("active");
+   //timer//
+   red.removeClass("active");
+
+   green.addClass("active");
+   //timer//
+   green.removeClass("active");
+
+
 
 var isClicked = setInterval(active, 750);
+  clearInterval(isClicked);
 
 $(".midbutton").click(function(){
   console.log("button works");
-  clearInterval(isClicked);
 });
 
 $(blue).click(function(){
