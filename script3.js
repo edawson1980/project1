@@ -3,7 +3,6 @@ var blue = $(".blue");
 var yellow = $(".yellow");
 var red = $(".red");
 var green = $(".green");
-var midbutton = $(".midbutton");
 // var str=$(blue).clone().wrap('<div/>').parent().html();
 // var str=$(yellow).clone().wrap('<div/>').parent().html();
 // var str=$(red).clone().wrap('<div/>').parent().html();
@@ -21,13 +20,12 @@ var delay = 800;
 
 
 
-var audio = $("#mysoundclip")[0];
-$(".midbutton").click(function() {
-  debugger
-  
-    console.log("this is the audio button");
-    audio.play();
-});
+// var audio = $("#mysoundclip")[0];
+// $(".midbutton").click(function() {
+//
+//     console.log("this is the audio button");
+//     audio.play();
+// });
 
 
 function randomColor(){
@@ -37,10 +35,8 @@ function randomColor(){
 
 
 
-   midbutton.click(function compMoves() {
+   $(".midbutton").click(function compMoves() {
     pattern.push(randomColor());
-
-
       pattern.forEach(function(color, index) {
         setTimeout(function() {
           $(color).addClass('active');
@@ -58,8 +54,8 @@ function randomColor(){
 
   blue.click(function userMoves() {
     user.push($(this).text());
-    if((user.length-1) !== (pattern.length-1)){
-      alert("GAME OVER");
+    if((user.length-1) != (pattern.length-1)){
+      alert("IT SURE WOULD");
     }else {
       pattern.push(randomColor());
       pattern.forEach(function(color, index) {
@@ -70,17 +66,19 @@ function randomColor(){
       }, 500);
     }, delay * index);
   });
-    }
-  });
-    $(".blue").toggleClass("active");
-    setTimeout(function() {
-      $(".blue").toggleClass('active');
-    }, 500);
+}
+
+  $(".blue").toggleClass('active');
+  setTimeout(function() {
+    $(".blue").toggleClass('active');
+  }, 500);
+});
+
 
     yellow.click(function userMoves() {
       user.push($(this).text());
-      if((user.length-1) !== (pattern.length-1)){
-        alert("GAME OVER");
+      if((user.length-1) != (pattern.length-1)){
+        alert("BE GREAT");
       } else {
         pattern.push(randomColor());
         pattern.forEach(function(color, index) {
@@ -103,8 +101,8 @@ function randomColor(){
 
 red.click(function userMoves() {
   user.push($(this).text());
-  if((user.length-1) !== (pattern.length-1)){
-    alert("GAME OVER");
+  if((user.length-1) != (pattern.length-1)){
+    alert("IF I COULD");
   } else {
     pattern.push(randomColor());
     pattern.forEach(function(color, index) {
@@ -126,8 +124,8 @@ red.click(function(){
 
 green.click(function userMoves() {
   user.push($(this).text());
-  if((user.length-1) !== (pattern.length-1)){
-    alert("GAME OVER");
+  if((user.length-1) != (pattern.length-1)){
+    alert("FIGURE THIS OUT");
   } else {
     pattern.push(randomColor());
     pattern.forEach(function(color, index) {
