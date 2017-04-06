@@ -1,80 +1,73 @@
 body {
-  background: #C7BBC9;
-  margin: 100px;
-  font-family: 'Press Start 2P', cursive;
+    background: #C7BBC9;
+    margin: 100px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .lights {
-  display: flex;
-  justify-content: space-between;
-
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .blue {
-  background-color: #7FB4E0;
-  width : 350px;
-  height: 100px;
-  margin-top: 50px;
-
-
+    background-color: #7FB4E0;
+    width: 350px;
+    height: 100px;
+    margin-top: 50px;
 }
 
 .yellow {
-  background: #ECEE25;
-  width : 350px;
-  height: 100px;
-  margin-top: 50px;
-
-
+    background: #ECEE25;
+    width: 350px;
+    height: 100px;
+    margin-top: 50px;
 }
 
 .red {
-  background: #ec7878;
-  width : 350px;
-  height: 100px;
-
+    background: #ec7878;
+    width: 350px;
+    height: 100px;
 }
 
 .green {
-  background: #82D5A0;
-  width : 350px;
-  height: 100px;
-
+    background: #82D5A0;
+    width: 350px;
+    height: 100px;
 }
 
 .midbutton {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .button {
-  font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .scoreboard {
-  display: flex;
-  justify-content: center;
-  background: #F8F8FF;
-  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background: #F8F8FF;
+    margin-top: 50px;
 }
 
 p {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
+
 .active {
-  opacity: 0.5;
+    opacity: 0.5;
 }
+
 .hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
