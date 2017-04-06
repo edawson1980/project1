@@ -1,4 +1,3 @@
-
 var blue = $(".blue");
 var yellow = $(".yellow");
 var red = $(".red");
@@ -28,149 +27,149 @@ var delay = 800;
 // });
 
 
-function randomColor(){
-  console.log("colors work");
-  return lights[Math.floor(Math.random()*lights.length)];
+function randomColor() {
+    console.log("colors work");
+    return lights[Math.floor(Math.random() * lights.length)];
 }
 
 
 
-   $(".midbutton").click(function compMoves() {
+$(".midbutton").click(function compMoves() {
     pattern.push(randomColor());
-      pattern.forEach(function(color, index) {
+    pattern.forEach(function(color, index) {
         setTimeout(function() {
-          $(color).addClass('active');
-        setTimeout(function() {
-          $(color).removeClass('active');
-        }, 500);
-      }, delay * index);
+            $(color).addClass('active');
+            setTimeout(function() {
+                $(color).removeClass('active');
+            }, 500);
+        }, delay * index);
     });
 
-  });
-
-
-
-
-
-  blue.click(function userMoves() {
-    user.push($(this).text());
-    if((user.length-1) != (pattern.length-1)){
-      alert("IT SURE WOULD");
-    }else {
-      pattern.push(randomColor());
-      pattern.forEach(function(color, index) {
-      setTimeout(function() {
-        $(color).addClass('active');
-      setTimeout(function() {
-        $(color).removeClass('active');
-      }, 500);
-    }, delay * index);
-  });
-}
-
-  $(".blue").toggleClass('active');
-  setTimeout(function() {
-    $(".blue").toggleClass('active');
-  }, 500);
 });
 
 
-    yellow.click(function userMoves() {
-      user.push($(this).text());
-      if((user.length-1) != (pattern.length-1)){
-        alert("BE GREAT");
-      } else {
+
+
+
+blue.click(function userMoves() {
+    user.push($(this).text());
+    if ((user.length - 1) != (pattern.length - 1)) {
+        alert("IT SURE WOULD");
+    } else {
         pattern.push(randomColor());
         pattern.forEach(function(color, index) {
-        setTimeout(function() {
-          $(color).addClass('active');
-        setTimeout(function() {
-          $(color).removeClass('active');
-        }, 500);
-      }, delay * index);
-    });
-    yellow.click(function(){
-      $(".yellow").toggleClass("active");
-      setTimeout(function() {
-        $(".yellow").toggleClass('active');
-      }, 500);
-    });
-  }
+            setTimeout(function() {
+                $(color).addClass('active');
+                setTimeout(function() {
+                    $(color).removeClass('active');
+                }, 500);
+            }, delay * index);
+        });
+    }
+
+    $(".blue").toggleClass('active');
+    setTimeout(function() {
+        $(".blue").toggleClass('active');
+    }, 500);
+});
+
+
+yellow.click(function userMoves() {
+    user.push($(this).text());
+    if ((user.length - 1) != (pattern.length - 1)) {
+        alert("BE GREAT");
+    } else {
+        pattern.push(randomColor());
+        pattern.forEach(function(color, index) {
+            setTimeout(function() {
+                $(color).addClass('active');
+                setTimeout(function() {
+                    $(color).removeClass('active');
+                }, 500);
+            }, delay * index);
+        });
+        yellow.click(function() {
+            $(".yellow").toggleClass("active");
+            setTimeout(function() {
+                $(".yellow").toggleClass('active');
+            }, 500);
+        });
+    }
 });
 
 
 red.click(function userMoves() {
-  user.push($(this).text());
-  if((user.length-1) != (pattern.length-1)){
-    alert("IF I COULD");
-  } else {
-    pattern.push(randomColor());
-    pattern.forEach(function(color, index) {
-    setTimeout(function() {
-      $(color).addClass('active');
-    setTimeout(function() {
-      $(color).removeClass('active');
-    }, 500);
-  }, delay * index);
-});
-red.click(function(){
-  $(".red").toggleClass("active");
-  setTimeout(function() {
-    $(".red").toggleClass('active');
-  }, 500);
-});
-}
+    user.push($(this).text());
+    if ((user.length - 1) != (pattern.length - 1)) {
+        alert("IF I COULD");
+    } else {
+        pattern.push(randomColor());
+        pattern.forEach(function(color, index) {
+            setTimeout(function() {
+                $(color).addClass('active');
+                setTimeout(function() {
+                    $(color).removeClass('active');
+                }, 500);
+            }, delay * index);
+        });
+        red.click(function() {
+            $(".red").toggleClass("active");
+            setTimeout(function() {
+                $(".red").toggleClass('active');
+            }, 500);
+        });
+    }
 });
 
 green.click(function userMoves() {
-  user.push($(this).text());
-  if((user.length-1) != (pattern.length-1)){
-    alert("FIGURE THIS OUT");
-  } else {
-    pattern.push(randomColor());
-    pattern.forEach(function(color, index) {
-    setTimeout(function() {
-      $(color).addClass('active');
-    setTimeout(function() {
-      $(color).removeClass('active');
-    }, 500);
-  }, delay * index);
-});
-green.click(function(){
-  $(".green").toggleClass("active");
-  setTimeout(function() {
-    $(".green").toggleClass('active');
-  }, 500);
-});
-}
+    user.push($(this).text());
+    if ((user.length - 1) != (pattern.length - 1)) {
+        alert("FIGURE THIS OUT");
+    } else {
+        pattern.push(randomColor());
+        pattern.forEach(function(color, index) {
+            setTimeout(function() {
+                $(color).addClass('active');
+                setTimeout(function() {
+                    $(color).removeClass('active');
+                }, 500);
+            }, delay * index);
+        });
+        green.click(function() {
+            $(".green").toggleClass("active");
+            setTimeout(function() {
+                $(".green").toggleClass('active');
+            }, 500);
+        });
+    }
 });
 
 
 
-  //     setTimeout(function() {
-  //     $(".blue").addClass('active');
-  //     setTimeout(function() {
-  //     $(".blue").removeClass('active');
-  //     }, 1000);
-  //   });
-  //     setTimeout(function() {
-  //       $(yellow).addClass('active');
-  //     setTimeout(function() {
-  //       $(yellow).removeClass('active');
-  //     }, 1000);
-  //   });
-  //   setTimeout(function() {
-  //     $(red).addClass('active');
-  //   setTimeout(function() {
-  //     $(red).removeClass('active');
-  //   }, 1000);
-  // });
-  //   setTimeout(function() {
-  //     $(green).addClass('active');
-  //   setTimeout(function() {
-  //     $(green).removeClass('active');
-  //   }, 1000);
-  // });
+//     setTimeout(function() {
+//     $(".blue").addClass('active');
+//     setTimeout(function() {
+//     $(".blue").removeClass('active');
+//     }, 1000);
+//   });
+//     setTimeout(function() {
+//       $(yellow).addClass('active');
+//     setTimeout(function() {
+//       $(yellow).removeClass('active');
+//     }, 1000);
+//   });
+//   setTimeout(function() {
+//     $(red).addClass('active');
+//   setTimeout(function() {
+//     $(red).removeClass('active');
+//   }, 1000);
+// });
+//   setTimeout(function() {
+//     $(green).addClass('active');
+//   setTimeout(function() {
+//     $(green).removeClass('active');
+//   }, 1000);
+// });
 
 
 
