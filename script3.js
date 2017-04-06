@@ -3,11 +3,12 @@ var blue = $(".blue");
 var yellow = $(".yellow");
 var red = $(".red");
 var green = $(".green");
-var str=$(blue).clone().wrap('<div/>').parent().html();
-var str=$(yellow).clone().wrap('<div/>').parent().html();
-var str=$(red).clone().wrap('<div/>').parent().html();
-var str=$(green).clone().wrap('<div/>').parent().html();
-
+var midbutton = $(".midbutton");
+// var str=$(blue).clone().wrap('<div/>').parent().html();
+// var str=$(yellow).clone().wrap('<div/>').parent().html();
+// var str=$(red).clone().wrap('<div/>').parent().html();
+// var str=$(green).clone().wrap('<div/>').parent().html();
+// var str=$(midbutton).clone().wrap('<div/>').parent().html();
 
 
 var lights = [blue, yellow, red, green];
@@ -16,9 +17,17 @@ var user = [];
 var score = 0;
 var delay = 800;
 
-lights.toString();
 
 
+
+
+var audio = $("#mysoundclip")[0];
+$(".midbutton").click(function() {
+  debugger
+  
+    console.log("this is the audio button");
+    audio.play();
+});
 
 
 function randomColor(){
@@ -28,8 +37,10 @@ function randomColor(){
 
 
 
-   $(".midbutton").click(function compMoves() {
+   midbutton.click(function compMoves() {
     pattern.push(randomColor());
+
+
       pattern.forEach(function(color, index) {
         setTimeout(function() {
           $(color).addClass('active');
@@ -45,11 +56,11 @@ function randomColor(){
 
 
 
-  $("blue").click(function userMoves() {
-    user.push($(this).val());
-    if((user.lastIndexOf()) !== (pattern.lastIndexOf())){
+  blue.click(function userMoves() {
+    user.push($(this).text());
+    if((user.length-1) !== (pattern.length-1)){
       alert("GAME OVER");
-    } else {
+    }else {
       pattern.push(randomColor());
       pattern.forEach(function(color, index) {
       setTimeout(function() {
@@ -66,9 +77,9 @@ function randomColor(){
       $(".blue").toggleClass('active');
     }, 500);
 
-    $("yellow").click(function userMoves() {
-      user.push($(this).val());
-      if((user.lastIndexOf()) !== (pattern.lastIndexOf())){
+    yellow.click(function userMoves() {
+      user.push($(this).text());
+      if((user.length-1) !== (pattern.length-1)){
         alert("GAME OVER");
       } else {
         pattern.push(randomColor());
@@ -80,7 +91,7 @@ function randomColor(){
         }, 500);
       }, delay * index);
     });
-    $(yellow).click(function(){
+    yellow.click(function(){
       $(".yellow").toggleClass("active");
       setTimeout(function() {
         $(".yellow").toggleClass('active');
@@ -90,9 +101,9 @@ function randomColor(){
 });
 
 
-$("red").click(function userMoves() {
-  user.push($(this).val());
-  if((user.lastIndexOf()) !== (pattern.lastIndexOf())){
+red.click(function userMoves() {
+  user.push($(this).text());
+  if((user.length-1) !== (pattern.length-1)){
     alert("GAME OVER");
   } else {
     pattern.push(randomColor());
@@ -104,7 +115,7 @@ $("red").click(function userMoves() {
     }, 500);
   }, delay * index);
 });
-$(red).click(function(){
+red.click(function(){
   $(".red").toggleClass("active");
   setTimeout(function() {
     $(".red").toggleClass('active');
@@ -113,9 +124,9 @@ $(red).click(function(){
 }
 });
 
-$("green").click(function userMoves() {
-  user.push($(this).val());
-  if((user.lastIndexOf()) !== (pattern.lastIndexOf())){
+green.click(function userMoves() {
+  user.push($(this).text());
+  if((user.length-1) !== (pattern.length-1)){
     alert("GAME OVER");
   } else {
     pattern.push(randomColor());
@@ -127,7 +138,7 @@ $("green").click(function userMoves() {
     }, 500);
   }, delay * index);
 });
-$(green).click(function(){
+green.click(function(){
   $(".green").toggleClass("active");
   setTimeout(function() {
     $(".green").toggleClass('active');
@@ -167,27 +178,27 @@ $(green).click(function(){
 
 
 
-$(blue).click(function(){
-  $(".blue").toggleClass("active");
-  setTimeout(function() {
-    $(".blue").toggleClass('active');
-  }, 1000);
-});
-$(yellow).click(function(){
-  $(".yellow").toggleClass("active");
-  setTimeout(function() {
-    $(".yellow").toggleClass('active');
-  }, 1000);
-});
-$(red).click(function(){
-  $(".red").toggleClass("active");
-  setTimeout(function() {
-    $(".red").toggleClass('active');
-  }, 1000);
-});
-$(green).click(function(){
-  $(".green").toggleClass("active");
-  setTimeout(function() {
-    $(".green").toggleClass('active');
-  }, 1000);
-});
+// $(blue).click(function(){
+//   $(".blue").toggleClass("active");
+//   setTimeout(function() {
+//     $(".blue").toggleClass('active');
+//   }, 500);
+// });
+// $(yellow).click(function(){
+//   $(".yellow").toggleClass("active");
+//   setTimeout(function() {
+//     $(".yellow").toggleClass('active');
+//   }, 500);
+// });
+// $(red).click(function(){
+//   $(".red").toggleClass("active");
+//   setTimeout(function() {
+//     $(".red").toggleClass('active');
+//   }, 500);
+// });
+// $(green).click(function(){
+//   $(".green").toggleClass("active");
+//   setTimeout(function() {
+//     $(".green").toggleClass('active');
+//   }, 500);
+// });
