@@ -2,41 +2,49 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Simon!</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Simon!</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Simon</h1>
-    </div>
+
+  <div class="gameboard">
+    <h1>Simon!</h1>
     <div class="lights">
-        <div id="one" class="blue hide-text">blue</div>
-        <div id="two" class="yellow hide-text">yellow</div>
+      <div class="tile blue" id="1"></div>
+      <div class="tile yellow" id="2"></div>
     </div>
 
     <div class="midbutton">
-        <button type="button">New Game</button>
-        <!-- <button type="button">Player One</button>
-      <button type="button">Player Two</button> -->
+      <button type="button">New Game</button>
+    </div>
+    <div class="row" id="power">
+      <div class="col-md-2 text-right" id="onText">ON</div>
+      <div class="col-md-2 text-center" id="onSwitch">
+        <div id="power"></div>
+      </div>
+      <div class="col-md-2 text-left" id="offText"></div>
+    </div>
+
+
+    <div class="scoreboard">
+      <div id="score">0</div>
     </div>
 
     <div class="lights">
-        <div id="three" class="red hide-text">red</div>
-        <div id="four" class="green hide-text">green</div>
+      <div class="tile red" id="3"></div>
+      <div class="tile green" id="4"></div>
     </div>
-
-    <div class="scoreboard">0</div>
 
 
 
     <footer>
-        <p>&copy;EED</p>
+      <p>&copy;EED</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="./script3.js"></script>
+    <script src="./index_script.js"></script>
     <audio id="mysoundclip" preload="auto">
       <source src="assets/blop.mp3"></source>
     </audio>
