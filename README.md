@@ -28,20 +28,21 @@ Bronze:  title box, score box, alert noises, 4 basic colored panels, one player
 TECHNOLOGIES USED:
 JavaScript, jquery, html5, css.
 
-APPROACH TAKEN:
+<!-- APPROACH TAKEN:
 I built the basic html and css framework first, and then tackled the JS piece by piece.  First I set my "colors"(lights/buttons/panels) to variables.  Then I created a function to generate a random color from the array that I had created to hold the lights.
 Then I set up a click event to fire to fire when New Game is clicked: that will set the randomColor function into motion, and then push that result to the end of the patterns array
 Then i wrote a loop, using forEach that will iterate over each element in the patterns array, and will make each element "blink" (by using setTimeout and the toggleClass selector).
 This basically takes care of the Computer Moves section.
 
 Then I wrote a function for each of the four colors that will push the value of whichever color is clicked to the end of the user array.  I put that into a for statement that essentially read:
-        if the last element in the User array does not match the last element in the Pattern array, alert with the message "GAME OVER".  otherwise, run the "computer moves" function again (selecting a random color and then pushing it to pattern array).
+        if the last element in the User array does not match the last element in the Pattern array, alert with the message "GAME OVER".  otherwise, run the "computer moves" function again (selecting a random color and then pushing it to pattern array). -->
 
 INSTALLATION INSTRUCTIONS:
 fork and clone this repo, then open index.html in your browser.
-script3.js is the only js file linked to index.html.  the other js files are to be ignored.
 
-UNSOLVED PROBLEMS:
+A live version of Simon can be found at <www.erinedawson.com>
+
+<!-- UNSOLVED PROBLEMS:
 1) the audio clip would not play because the audio variable is undefined.  i was unable to figure out why it was undefined, and so removed the audio reference in my script file because the game functionality would not load at all otherwise
 2) after the first interaction between Computer and User, buttons start being fired in multiples
-3) comparisons between what the user array and the pattern array do not register as being !=, even when they are.
+3) comparisons between what the user array and the pattern array do not register as being !=, even when they are. -->
