@@ -4,7 +4,7 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
-.header {
+h1 {
     display: flex;
     justify-content: center;
 }
@@ -12,6 +12,7 @@ body {
 .lights {
     display: flex;
     justify-content: space-between;
+    /*align-items: flex-end;*/
 }
 
 .blue {
@@ -19,6 +20,7 @@ body {
     width: 350px;
     height: 100px;
     margin-top: 50px;
+    font-size: 0px;
 }
 
 .yellow {
@@ -26,18 +28,21 @@ body {
     width: 350px;
     height: 100px;
     margin-top: 50px;
+    font-size: 0px;
 }
 
 .red {
     background: #ec7878;
     width: 350px;
     height: 100px;
+    font-size: 0px;
 }
 
 .green {
     background: #82D5A0;
     width: 350px;
     height: 100px;
+    font-size: 0px;
 }
 
 .midbutton {
@@ -46,8 +51,11 @@ body {
     margin: auto;
 }
 
-.button {
+button {
     font-family: 'Press Start 2P', cursive;
+    padding: 5px;
+
+
 }
 
 .scoreboard {
@@ -55,6 +63,10 @@ body {
     justify-content: center;
     background: #F8F8FF;
     margin-top: 50px;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 p {
